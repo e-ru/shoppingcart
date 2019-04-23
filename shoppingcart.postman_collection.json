@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "03fd72ff-fe19-4038-928e-a342c2564326",
+		"name": "shoppingcart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add to cart",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sku\": \"A\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8090/shoppingcart",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8090",
+					"path": [
+						"shoppingcart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get total price",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8090/shoppingcart/total",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8090",
+					"path": [
+						"shoppingcart",
+						"total"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin get rules",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8090/admin/persistence",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8090",
+					"path": [
+						"admin",
+						"persistence"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin get rule",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8090/admin/persistence/A",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8090",
+					"path": [
+						"admin",
+						"persistence",
+						"A"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin add rule",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sku\": \"E\",\n\t\"unitPrice\": 30,\n\t\"specialCount\": 2,\n\t\"specialPrice\": 50\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8090/admin/persistence",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8090",
+					"path": [
+						"admin",
+						"persistence"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin update rule",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"unitPrice\": 60,\n\t\"specialCount\": 2,\n\t\"specialPrice\": 100\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8090/admin/persistence/E",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8090",
+					"path": [
+						"admin",
+						"persistence",
+						"E"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin delete rule",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8090/admin/persistence/E",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8090",
+					"path": [
+						"admin",
+						"persistence",
+						"E"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
