@@ -11,8 +11,6 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-//https://www.javatips.net/blog/h2-in-memory-database-example
-
 public class DBManager {
 
 	private static final Logger LOG = LogManager.getLogger(DBManager.class);

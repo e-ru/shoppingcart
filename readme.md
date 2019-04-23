@@ -19,3 +19,9 @@ The server runs under following address:
 `http://127.0.0.1:8090`
 
 There is a postman collection with the rest calls to fulfil the exercice tasks.
+
+## things to improve
+
+- more testing
+- better logging
+- a more general database interface
